@@ -1,0 +1,14 @@
+<h2>Here's a form to edit <%= cryptids.name %></h2>
+
+<form action="/cryptids" method="POST">
+    <label for="cryptid-type">Type:</label>
+    <input type="text" name="type" id="cryptid-type"
+    value="<%= cryptid.type %>">
+
+    <label for="cryptid/name">Name:</label>
+    <input type="text" name="name" id="cryptid-name"
+    value = "<%= cryptid.name %>">
+
+    <input type="submit" value="Edit that Cryptid!">
+
+</form>
